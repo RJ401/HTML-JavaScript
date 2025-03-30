@@ -1,0 +1,39 @@
+/* Header */
+h1 {
+    color: red;
+    border: 2px solid blue;
+    padding: 10px;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+/* Background Color */
+body {
+    background-color: lightgray;
+}
+/* Paragraph Block*/
+p {
+    border: 2px solid blue;
+    padding: 15px;
+    text-align: justify;
+    width: fit-content;
+    margin: 0 auto;
+}
+/* Text Alterations */
+
+/* Italic */
+em {
+    font-style: italic;
+    color: red;
+}
+/* Bold */
+strong {
+    font-weight: bold;
+    color: red;
+}
+/* Underlined */
+u {
+    text-decoration: underline;
+    color: red;
+}
