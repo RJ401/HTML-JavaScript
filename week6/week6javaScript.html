@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<Html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Week 6 | JavaScript Lab</title>
+    </head>
+    <body>
+        <h1>
+            Week 6 | JavaScript
+            
+        </h1>
+        <p></p>
+        <button>Click me!</button>
+        <script>
+            // javascript single line comment 
+            /*
+                This is an example of a multiline comment
+            */ 
+
+            //example of variable
+            var firstName = "Raymond";
+            var lastName = "Hebert";
+
+            var fullName = `${firstName} ${lastName}`;
+            //alert(fullName)
+            console.log(fullName);
+
+            //example of a js function
+            function outputMessage(tag, message, color){
+                document.querySelector(tag).innerHTML = message;
+                document.querySelector(tag).style.color = color;
+            }
+
+            // outputMessage("h1", "Wouldn't you like to be a pepper too", "#00ff00");
+            outputMessage("p", "I need a coffee", "#0000ff");
+
+            //firstName = prompt("Please Enter your Name");
+            //console.log(firstName);
+
+            var promptButton = document.querySelector("button");
+
+            promptButton.addEventListener("click", dataPrompt);
+
+            function dataPrompt(){
+                alert(`Hello my name is ${firstName}. Welcome to my program!`);
+                var yourName = prompt("What is your Name?");
+                alert(`Hello ${yourName}. Nice to meet you`);
+                var yourLastName = prompt("Please tell me your last name.");
+                alert(`Your full name is ${yourName} ${lastName}`);
+                
+
+
+            }
+
+
+
+        </script>
+    </body>
+</Html>
